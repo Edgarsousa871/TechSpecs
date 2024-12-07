@@ -1,0 +1,124 @@
+/* Reset básico para margem e preenchimento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.main {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Estilo do formulário principal */
+.formLogin {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4A90E2;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Estilo dos campos de input */
+.formLogin .linha {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.formLogin label {
+    font-size: 14px;
+    color: #555;
+}
+
+.formLogin input[type="email"],
+.formLogin input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.formLogin input[type="email"]:focus,
+.formLogin input[type="password"]:focus {
+    border-color: #4A90E2;
+}
+
+/* Botão de envio */
+.botao button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4A90E2;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao button:hover {
+    background-color: #357ABD;
+}
+
+/* Link de registro */
+.formLogin .link {
+    margin-top: 15px;
+}
+
+.formLogin .link a {
+    text-decoration: none;
+    color: #4A90E2;
+    font-size: 14px;
+}
+
+.formLogin .link a:hover {
+    text-decoration: underline;
+}
+
+/* Mensagem de erro */
+.error {
+    color: #D9534F;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Efeito responsivo */
+@media (max-width: 400px) {
+    .formLogin {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .formLogin input[type="email"],
+    .formLogin input[type="password"],
+    .botao button {
+        font-size: 14px;
+    }
+}

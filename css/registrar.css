@@ -1,0 +1,104 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 30px; 
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 350px; 
+            max-width: 100%; 
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .input-group input,
+        .input-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #4cae4c;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .error {
+            color: red;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .toggle-password {
+            position: relative;
+        }
+
+        .toggle-password button {
+            position: absolute;
+            right: 10px;
+            top: 60%; 
+            transform: translateY(-50%); 
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #007bff;
+        }
+
+        .back-store {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .back-store a {
+            display: inline-block;
+            padding: 8px; /* Diminuir o padding para um botão menor */
+            background-color: #5cb85c; /* Mesma cor do botão Registrar */
+            color: white;
+            text-decoration: none;
+            border-radius: 3px;
+            font-size: 14px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .back-store a:hover {
+            background-color: #4cae4c; /* Mesma cor de hover do botão Registrar */
+        }
+   
